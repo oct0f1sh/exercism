@@ -6,8 +6,8 @@ import (
 )
 
 type Clock struct {
-	hours     int
-	minutes   int
+	hours   int
+	minutes int
 }
 
 func (c Clock) String() string {
@@ -43,7 +43,7 @@ func New(h int, m int) Clock {
 
 	if m < 0 {
 		m = 60 + m
-		totalHours --
+		totalHours--
 	}
 
 	return Clock{totalHours, m}

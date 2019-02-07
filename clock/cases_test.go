@@ -25,7 +25,7 @@ var timeTests = []struct {
 	{-91, 0, "05:00"},      // negative hour rolls over continuously
 	{1, -40, "00:20"},      // negative minutes
 	{1, -160, "22:20"},     // negative minutes roll over
-	{1, -4820, "16:40"},     // negative minutes roll over continuously
+	{1, -4820, "16:40"},    // negative minutes roll over continuously
 	{-25, -160, "20:20"},   // negative hour and minutes both roll over
 	{-121, -5810, "22:10"}, // negative hour and minutes both roll over continuously
 	{10, -67, "08:53"},

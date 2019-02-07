@@ -34,7 +34,7 @@ func Valid(card string) bool {
 	// double every other number while appending non doubled numbers
 	for i, num := range formattedCard {
 
-		if (len(card) - i) % 2 == 0 {
+		if (len(card)-i)%2 == 0 {
 			num += num
 
 			fmt.Println("doubled: ", num)
@@ -59,7 +59,7 @@ func Valid(card string) bool {
 		fmt.Println(sum, num)
 	}
 
-	if sum % 10 == 0 {
+	if sum%10 == 0 {
 		return true
 	}
 

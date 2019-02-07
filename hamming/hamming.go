@@ -11,9 +11,9 @@ func Distance(a, b string) (int, error) {
 
 	for i := range a {
 		if a[i] != b[i] {
-			differences ++
+			differences++
 		}
 	}
 
 	return differences, nil
-}	
+}

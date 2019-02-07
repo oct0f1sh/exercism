@@ -12,7 +12,7 @@ func Score(letters string) int {
 	for _, c := range letters {
 		switch string(c) {
 		case "a", "e", "i", "o", "u", "l", "n", "r", "s", "t":
-			total ++
+			total++
 		case "d", "g":
 			total += 2
 		case "b", "c", "m", "p":

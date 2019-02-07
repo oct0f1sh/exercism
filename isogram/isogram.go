@@ -1,9 +1,9 @@
 package isogram
 
-import(
+import (
 	"strings"
 	"unicode"
-) 
+)
 
 func IsIsogram(input string) bool {
 	chars := make(map[string]int)
@@ -17,8 +17,8 @@ func IsIsogram(input string) bool {
 			if char_count == 1 {
 				return false
 			}
-	
-			chars[string(char)] ++
+
+			chars[string(char)]++
 		}
 	}
 
